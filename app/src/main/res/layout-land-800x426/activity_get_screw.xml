@@ -1,0 +1,214 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.autodoor.autoscrew.ActivityGetScrew"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView18"
+            android:layout_weight="0.9" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/textView13"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Z"
+            android:id="@+id/textView14"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19"
+            android:layout_weight="4.6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/my_border"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="左仓"
+            android:id="@+id/textView15"
+            android:layout_weight="1.2"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLeftboxX"
+            android:text="190"
+            android:layout_weight="1.2" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etLeftboxZ"
+            android:text="60"
+            android:layout_weight="1.2" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="当前位置为取螺丝点"
+            android:id="@+id/btnLeftboxSetPoint"
+            android:layout_weight="1"
+            style="?android:attr/buttonStyleSmall" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="取螺丝"
+            android:id="@+id/btnLeftboxGetScrew"
+            android:layout_weight="1.2"
+            style="?android:attr/buttonStyleSmall" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="运行X"
+            android:id="@+id/btnLeftboxRunX"
+            android:layout_weight="1.2"
+            style="?android:attr/buttonStyleSmall" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="运行XZ"
+            android:id="@+id/btnLeftboxRunXZ"
+            android:layout_weight="1.2"
+            style="?android:attr/buttonStyleSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/my_border"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="右仓"
+            android:id="@+id/textView16"
+            android:layout_weight="1.2"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etRightboxX"
+            android:text="2300"
+            android:layout_weight="1.2" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etRightboxZ"
+            android:text="455"
+            android:layout_weight="1.2" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="当前位置为取螺丝点"
+            android:id="@+id/btnRightboxSetPoint"
+            android:layout_weight="1"
+            style="?android:attr/buttonStyleSmall" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="取螺丝"
+            android:id="@+id/btnRightboxGetScrew"
+            android:layout_weight="1.2"
+            style="?android:attr/buttonStyleSmall" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="运行X"
+            android:id="@+id/btnRightboxRunX"
+            android:layout_weight="1.2"
+            style="?android:attr/buttonStyleSmall" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="运行XZ"
+            android:id="@+id/btnRightboxRunXZ"
+            android:layout_weight="1.2"
+            style="?android:attr/buttonStyleSmall" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right|center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17"
+            android:layout_weight="4" />
+
+        <ToggleButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tgElectricity"
+            android:textOff="电机断电"
+            android:textOn="电机加电"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="复位"
+            android:id="@+id/btnReset"
+            android:minWidth="140dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:id="@+id/btnSave"
+            android:layout_weight="1"
+            style="?android:attr/buttonStyleSmall" />
+
+    </LinearLayout>
+
+</LinearLayout>

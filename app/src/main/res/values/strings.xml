@@ -1,0 +1,39 @@
+<resources  xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">AUTODOOR</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">返回</string>
+    <string name="para">运行设置</string>
+    <string name="title_activity_arc">圆弧设置</string>
+    <string name="title_activity_sys">系统设置</string>
+    <string name="title_activity_para">运行参数设置</string>
+    <string name="title_activity_get_screw">取螺丝点坐标位置</string>
+    <string name="title_activity_set_screw">锁螺丝点坐标位置</string>
+    <string name="title_activity_activity_matrix">矩阵</string>
+    <string name="title_activity_activity_correction">校正</string>
+
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">你还没连接到设备上</string>
+    <string name="bt_not_enabled_leaving">蓝牙不可用，离开中</string>
+    <string name="title_connecting">连接中...</string>
+    <string name="title_connected_to">连接到 <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">未连接</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">扫描设备...</string>
+    <string name="select_device">选择设备来连接</string>
+    <string name="none_paired">没有配对的设备</string>
+    <string name="none_found">没有发现设备</string>
+    <string name="title_paired_devices">已配对的设备</string>
+    <string name="title_other_devices">其他可用的设备</string>
+    <string name="button_scan">扫描设备</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">连接设备</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+    <string name="title_activity_activity_ablocation">ActivityABLocation</string>
+
+</resources>

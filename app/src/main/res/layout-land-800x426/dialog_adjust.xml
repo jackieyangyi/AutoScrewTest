@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout12">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/linearLayout10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:id="@+id/textView26" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextX"
+            android:text="500"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y"
+            android:id="@+id/textView27" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextY"
+            android:text="20"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z"
+            android:id="@+id/textView28" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextZ"
+            android:text="400"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="慢"
+            android:id="@+id/textView104"
+            android:gravity="center"
+            android:background="#00ff00"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="快"
+            android:id="@+id/textView105"
+            android:gravity="center"
+            android:background="#ffff00"
+            android:layout_alignBottom="@+id/linearLayout10"
+            android:layout_toStartOf="@+id/btnUpZ"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/linearLayout8"
+        android:layout_above="@+id/linearLayout9"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/linearLayout9"
+        android:layout_above="@+id/linearLayout11"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_above="@+id/linearLayout7"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout11">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="37dp"
+        android:id="@+id/linearLayout7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:id="@+id/btnConfirm"
+        android:layout_weight="1"
+        android:layout_below="@+id/button55"
+        android:layout_alignStart="@+id/btnCancel" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@+id/btnCancel"
+        android:layout_weight="1"
+        android:layout_marginStart="26dp"
+        android:layout_alignTop="@+id/button52"
+        android:layout_toEndOf="@+id/button52" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="测算位置"
+        android:id="@+id/btnCalculate"
+        android:layout_weight="1"
+        android:layout_below="@+id/btnUpZ"
+        android:layout_alignStart="@+id/button40" />
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="复位"
+        android:id="@+id/button40"
+        android:layout_weight="1"
+        android:layout_above="@+id/btnConfirm"
+        android:layout_alignStart="@+id/btnConfirm" />
+
+    <ToggleButton
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textOn="电机加电中"
+        android:textOff="电机不加电"
+        android:id="@+id/tgSpeed"
+        android:layout_weight="1"
+        android:checked="false"
+        android:textSize="10dp"
+        android:layout_above="@+id/btnCalculate"
+        android:layout_alignStart="@+id/btnCalculate" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="左（-X）"
+        android:id="@+id/btnLeftX"
+        android:layout_weight="1"
+        android:longClickable="true"
+        android:layout_marginTop="110dp"
+        android:layout_below="@+id/linearLayout10"
+        android:layout_alignParentStart="true"
+        android:background="#ffff00"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="左（-X）"
+        android:id="@+id/button41"
+        android:layout_weight="1"
+        android:longClickable="true"
+        android:layout_alignBottom="@+id/btnLeftX"
+        android:layout_toEndOf="@+id/btnLeftX"
+        android:background="#00ff00"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="右（+X）"
+        android:id="@+id/btnRightX"
+        android:layout_weight="1"
+        android:layout_alignTop="@+id/button44"
+        android:layout_toEndOf="@+id/button44"
+        android:background="#00ff00"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="右（+X）"
+        android:id="@+id/button43"
+        android:layout_weight="1"
+        android:layout_alignBottom="@+id/btnRightX"
+        android:layout_toEndOf="@+id/btnRightX"
+        android:background="#ffff00"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/button44"
+        android:layout_weight="1"
+        android:layout_alignTop="@+id/button41"
+        android:layout_toEndOf="@+id/button41"
+        android:enabled="false"
+        android:background="#eeeeee" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="前(+Y)"
+        android:id="@+id/btnBackY"
+        android:layout_weight="1"
+        android:layout_above="@+id/btnRightX"
+        android:layout_toStartOf="@+id/btnRightX"
+        android:background="#00ff00"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="后（-Y）"
+        android:id="@+id/btnFrontY"
+        android:layout_weight="1"
+        android:layout_below="@+id/btnRightX"
+        android:layout_toStartOf="@+id/btnRightX"
+        android:background="#00ff00"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="下（+Z）"
+        android:id="@+id/btnDownZ"
+        android:layout_weight="1"
+        android:background="#00ff00"
+        android:layout_below="@+id/button54"
+        android:layout_toEndOf="@+id/button54"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="前(+Y)"
+        android:id="@+id/button49"
+        android:layout_weight="1"
+        android:layout_above="@+id/btnBackY"
+        android:layout_toEndOf="@+id/button41"
+        android:background="#ffff00"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="后（-Y）"
+        android:id="@+id/button50"
+        android:layout_weight="1"
+        android:layout_below="@+id/btnFrontY"
+        android:layout_alignStart="@+id/btnFrontY"
+        android:background="#ffff00"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="上(-Z)"
+        android:id="@+id/button53"
+        android:layout_weight="1"
+        android:background="#00ff00"
+        android:layout_above="@+id/button43"
+        android:layout_toEndOf="@+id/button54"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button54"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:background="#ffffff"
+        android:layout_below="@+id/button53"
+        android:layout_toEndOf="@+id/button43" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="下（+Z）"
+        android:id="@+id/button52"
+        android:layout_weight="1"
+        android:background="#ffff00"
+        android:layout_below="@+id/btnDownZ"
+        android:layout_alignStart="@+id/btnDownZ"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="上(-Z)"
+        android:id="@+id/btnUpZ"
+        android:layout_weight="1"
+        android:background="#ffff00"
+        android:layout_above="@+id/button53"
+        android:layout_alignStart="@+id/button53"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button55"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:background="#eeeeee"
+        android:layout_alignBaseline="@+id/button54"
+        android:layout_alignBottom="@+id/button54"
+        android:layout_toEndOf="@+id/button54"
+        android:text="|" />
+
+</RelativeLayout>

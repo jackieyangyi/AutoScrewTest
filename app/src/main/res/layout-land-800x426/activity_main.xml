@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.autodoor.autoscrew.MainActivity"
+    >
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运行设置"
+        android:id="@+id/btnPara"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:minWidth="120dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="锁螺丝点设置"
+        android:id="@+id/btnSetScrew"
+        android:layout_alignParentBottom="true"
+        android:minWidth="120dp"
+        android:layout_toRightOf="@+id/btnPara" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统设置"
+        android:id="@+id/btnSys"
+        android:layout_above="@+id/btnPara"
+        android:layout_alignParentStart="true"
+        android:minWidth="120dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取螺丝点设置"
+        android:id="@+id/btnGetScrew"
+        android:layout_alignEnd="@+id/btnSetScrew"
+        android:minWidth="120dp"
+        android:layout_alignBaseline="@+id/btnSys" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:id="@+id/btnExit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:minWidth="105dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etOutput"
+        android:text="60000"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnExit"
+        android:minWidth="80dp"
+        android:gravity="center_horizontal"
+        android:editable="false"
+        android:enabled="true"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="产量"
+        android:id="@+id/textView71"
+        android:layout_toStartOf="@+id/etOutput"
+        android:layout_alignBaseline="@+id/etOutput"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清零"
+        android:id="@+id/btnZero"
+        android:minWidth="105dp"
+        android:layout_toStartOf="@+id/textView71"
+        android:layout_toLeftOf="@+id/textView71"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="自动螺丝机"
+        android:id="@+id/textView72"
+        android:textSize="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="AUTODOOR V1.3"
+        android:id="@+id/textView73"
+        android:layout_below="@+id/textView72"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016-01"
+        android:id="@+id/textView74"
+        android:layout_alignBaseline="@+id/textView73"
+        android:layout_alignBottom="@+id/textView73"
+        android:layout_toEndOf="@+id/textView73"
+        android:textSize="10dp"
+        android:layout_marginLeft="10dp" />
+</RelativeLayout>

@@ -1,0 +1,423 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.autodoor.autoscrew.ActivitySetScrew"
+    android:fillViewport="false">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y排序"
+            android:id="@+id/btnSortY"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="当前点:"
+            android:id="@+id/textView90"
+            android:layout_alignBaseline="@+id/btnSortY"
+            android:layout_toEndOf="@+id/btnSortY"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="1"
+            android:id="@+id/txtCurrentRowNum"
+            android:layout_toEndOf="@+id/textView90"
+            android:layout_alignBaseline="@+id/btnSortY"
+            android:textColor="#000000"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预览"
+            android:id="@+id/btnPreviewFormula"
+            android:layout_weight="1"
+            android:layout_marginStart="105dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView90"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:background="@drawable/my_border"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/linearLayout4"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/btnPreviewFormula">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="缓存预览"
+                android:id="@+id/btnPreviewCach" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="缓存读取"
+                android:id="@+id/btnReadCache" />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="缓存保存"
+                android:id="@+id/btnSaveCache" />
+
+            <Spinner
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/spCache"
+                android:spinnerMode="dropdown"
+                android:gravity="center"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/btnPreviewFormula"
+            android:id="@+id/linearLayout5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="序号"
+                android:id="@+id/textView92"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X轴"
+                android:id="@+id/textView93"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y轴"
+                android:id="@+id/textView94"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z轴"
+                android:id="@+id/textView95"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仓位"
+                android:id="@+id/textView96"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="工作配方:"
+            android:id="@+id/textView97"
+            android:layout_below="@+id/linearLayout4"
+            android:layout_alignStart="@+id/linearLayout4"
+            android:autoText="true"
+            android:gravity="right" />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editFormular"
+        android:text="1"
+        android:layout_weight="1"
+        android:minWidth="50dp"
+        android:textColor="#000000"
+        android:paddingBottom="5dp"
+        android:paddingTop="0dp"
+        android:textSize="14dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_alignBaseline="@+id/textView97"
+        android:layout_alignBottom="@+id/textView97"
+        android:layout_toEndOf="@+id/textView97" />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配方名称:"
+            android:id="@+id/textView99"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignEnd="@+id/btnMatrix"
+            android:layout_alignBaseline="@+id/editFormular" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextName"
+            android:layout_weight="1"
+            android:text="A0123456"
+            android:singleLine="true"
+            android:layout_alignTop="@+id/textView99"
+            android:layout_toEndOf="@+id/textView99"
+            android:layout_marginLeft="10dp"
+            android:minWidth="80dp"
+            android:textColor="#000000"
+            android:paddingTop="0dp"
+            android:paddingBottom="5dp"
+            android:editable="false"
+            android:textSize="14dp"
+            android:layout_alignBaseline="@+id/textView99"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总点数:"
+            android:id="@+id/textView100"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:autoText="true"
+            android:layout_below="@+id/textView97"
+            android:layout_alignEnd="@+id/textView97" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextTotal"
+            android:text="50"
+            android:layout_weight="1"
+            android:minWidth="50dp"
+            android:textColor="#000000"
+            android:layout_alignBaseline="@+id/textView101"
+            android:layout_alignBottom="@+id/textView101"
+            android:layout_alignStart="@+id/editFormular"
+            android:paddingBottom="5dp"
+            android:paddingTop="0dp"
+            android:layout_margin="0dp"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="螺丝机:"
+            android:id="@+id/textView101"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignTop="@+id/textView100"
+            android:layout_toStartOf="@+id/editTextName" />
+
+
+
+    <Button
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:text="矩阵"
+            android:id="@+id/btnMatrix"
+            android:layout_weight="1"
+        android:layout_alignBaseline="@+id/btnReadFormula"
+        android:layout_alignBottom="@+id/btnReadFormula"
+        android:layout_toEndOf="@+id/scrollView" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="读取"
+            android:id="@+id/btnReadFormula"
+            android:layout_weight="1"
+            android:layout_below="@+id/textView101"
+            android:layout_toEndOf="@+id/btnMatrix" />
+
+    <Button
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:text="校正"
+            android:id="@+id/btnCorrection"
+            android:layout_weight="1"
+        android:layout_alignTop="@+id/btnSaveFormular"
+        android:layout_toStartOf="@+id/btnSaveFormular" />
+
+        <ToggleButton
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:text="New ToggleButton"
+            android:id="@+id/tgA"
+            android:textOff="不检螺丝刹车"
+            android:textOn="检测螺丝刹车"
+            android:textSize="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_alignBaseline="@+id/btnReturn"
+            android:layout_alignBottom="@+id/btnReturn"
+            android:layout_toEndOf="@+id/scrollView" />
+
+        <ToggleButton
+            android:layout_width="88dp"
+            android:layout_height="45dp"
+            android:text="New ToggleButton"
+            android:id="@+id/tgC"
+            android:textOff="电机断电"
+            android:textOn="电机加电"
+            android:textSize="10dp"
+            android:layout_below="@+id/btnCorrection"
+            android:layout_alignStart="@+id/btnCorrection" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="保存"
+            android:id="@+id/btnSaveFormular"
+            android:layout_weight="1"
+            android:layout_below="@+id/btnReadFormula"
+            android:layout_toEndOf="@+id/btnMatrix" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="复位"
+            android:id="@+id/btnReset"
+            android:layout_weight="1"
+            android:layout_below="@+id/btnCorrection"
+            android:layout_toEndOf="@+id/btnCorrection" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="返回"
+            android:id="@+id/btnReturn"
+            android:layout_weight="1"
+            android:layout_toEndOf="@+id/tgA"
+            android:layout_below="@+id/tgC" />
+
+
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="wrap_content"
+                android:layout_height="267dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:descendantFocusability="beforeDescendants"
+                android:layout_below="@+id/linearLayout5"
+                android:layout_alignParentStart="true"
+                android:layout_alignEnd="@+id/linearLayout5"
+                android:focusableInTouchMode="true" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/textView100"
+        android:layout_alignStart="@+id/textView97">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTotal"
+            android:layout_toEndOf="@+id/listview"
+            android:id="@+id/linearLayout6">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="该点运行XY"
+                android:id="@+id/btnRunXY"
+                android:layout_weight="1"
+                android:minWidth="150dp"
+                android:layout_below="@+id/textView100"
+                android:layout_alignStart="@+id/textView97" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="该点运行XYZ"
+                android:id="@+id/btnRunXYZ"
+                android:layout_weight="1"
+                android:layout_below="@+id/btnRunXY"
+                android:layout_alignStart="@+id/btnRunXY"
+                android:minWidth="150dp" />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="该点单独运行"
+                    android:id="@+id/btnRunAlone"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/btnRunXYZ"
+                    android:layout_alignLeft="@+id/btnRunXY"
+                    android:minWidth="150dp" />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="该点开始运行"
+                    android:id="@+id/btnStart"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/btnRunAlone"
+                    android:layout_alignLeft="@+id/btnRunXY"
+                    android:layout_alignEnd="@+id/btnRunAlone"
+                    android:minWidth="150dp" />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="当前位置为该点坐标"
+                    android:id="@+id/btnSetPoint"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/btnStart"
+                    android:layout_alignStart="@+id/btnStart"
+                    android:minWidth="150dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:id="@+id/spFormular"
+        android:layout_weight="1"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_alignEnd="@+id/linearLayout4"
+        android:spinnerMode="dropdown"
+        android:layout_alignBaseline="@+id/textView101" />
+
+
+</RelativeLayout>
